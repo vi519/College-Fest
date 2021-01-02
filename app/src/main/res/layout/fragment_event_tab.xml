@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Event_tab">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="EVENT FORM"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp">
+
+        <EditText
+            android:id="@+id/cllg_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/form_line"
+            android:hint="College Name"
+            android:textColor="@color/design_default_color_primary"
+            android:textColorHint="@color/colorPrimary" />
+
+
+        <EditText
+            android:id="@+id/fest_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cllg_edit"
+            android:layout_margin="10dp"
+            android:background="@drawable/form_line"
+            android:hint="Fest Name"
+            android:textColor="@color/design_default_color_primary"
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/venue_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fest_edit"
+            android:layout_margin="10dp"
+            android:background="@drawable/form_line"
+            android:hint="Venue"
+            android:textColor="@color/design_default_color_primary"
+            android:textColorHint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/time_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/venue_edit"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Choose the Time"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/date_pick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_edit"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Select Date"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/image_poster"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/date_pick"
+            android:src="@drawable/app_logo2" />
+
+        <Button
+
+            android:id="@+id/buttonchoose"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/image_poster"
+            android:layout_marginTop="36dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:text="Choose the Poster"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/event_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/buttonchoose"
+            android:layout_marginTop="83dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:text="SUBMIT"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

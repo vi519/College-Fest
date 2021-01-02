@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">C Fest</string>
+    <string name="title_activity_bottom_nav">C Fest</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string name="title_setting">Setting</string>
+    <string name="title_dashboard">Dashboard</string>
+
+
+</resources>
